@@ -1,0 +1,160 @@
+@import '../variables.scss';
+
+.team {
+  background: url(../../assets/png/shapes/shapes-team.svg) no-repeat, #f4f5f7;
+
+  .main__team {
+    padding: 160px 0 180px;
+  }
+
+  &__heading {
+    margin-bottom: 60px;
+    position: relative;
+  }
+
+  &__slider {
+    border-radius: 4px;
+  }
+
+  &__slider .slick-list {
+    margin: 0 -15px;
+  }
+
+  &__slide {
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+
+  &__image-box {
+    position: relative;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    overflow: hidden;
+  }
+
+  &__image {
+    position: relative;
+    height: 340px;
+  }
+
+  &__image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(
+      180deg,
+      rgba(30, 33, 44, 0) 43.9%,
+      rgba(30, 33, 44, 0.03) 55.21%,
+      rgba(30, 33, 44, 0.33) 68.73%,
+      rgba(30, 33, 44, 0.56) 76.17%,
+      rgba(30, 33, 44, 0.768225) 83.75%,
+      rgba(30, 33, 44, 0.92) 91.49%,
+      $bold-black 100%
+    );
+    transform: translateY(50%);
+    transition: all 0.2s;
+  }
+
+  &__socials-item {
+    margin-right: 12px;
+  }
+
+  &__slide:hover &__socials {
+    transform: translateY(0);
+  }
+
+  &__socials-item:last-child {
+    margin-right: 0;
+  }
+
+  &__socials-link {
+    display: block;
+    line-height: 0;
+  }
+
+  &__socials-link path {
+    transition: all 0.4s;
+  }
+
+  &__socials-link:hover path {
+    fill: #fff;
+  }
+
+  &__info {
+    text-align: center;
+  }
+
+  &__info-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 5px;
+  }
+
+  &__info-job {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #787a80;
+  }
+
+  &__slider-arrows {
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__slider-arrow {
+    display: block;
+    line-height: 0;
+    position: relative;
+    z-index: 5;
+  }
+
+  &__slider-arrow::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 48px;
+    height: 48px;
+    background: $orange;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &__slider-arrow:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  &__slider-arrow path {
+    transition: all 0.3s;
+  }
+
+  &__slider-arrow:hover path {
+    fill: #fff;
+  }
+
+  &__slider-prev {
+    margin-right: 24px;
+  }
+}

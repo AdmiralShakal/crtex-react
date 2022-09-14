@@ -1,0 +1,76 @@
+@import '../variables.scss';
+
+.program {
+  &__main {
+    padding: 115px 0 185px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading {
+    margin-bottom: 60px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__acordeon {
+    max-width: 600px;
+  }
+
+  &__acordeon-item {
+    margin-bottom: 24px;
+    padding-left: 40px;
+  }
+
+  &__acordeon-item:last-child {
+    margin-bottom: 0px;
+  }
+
+  &__acordeon-head {
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: $bold-black;
+  }
+
+  &__acordeon-head span {
+    color: $orange;
+  }
+
+  &__acordeon-head::before,
+  &__acordeon-head::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    width: 18px;
+    height: 2px;
+    background-color: $orange;
+    border-radius: 2px;
+  }
+
+  &__acordeon-head::after {
+    transform: rotate(90deg);
+    transition: all 0.6s;
+  }
+
+  &__acordeon-text {
+    display: none;
+    margin-top: 16px;
+  }
+
+  &__acordeon-item--active &__acordeon-text {
+    display: block;
+  }
+
+  &__acordeon-item--active &__acordeon-head::after {
+    transform: rotate(0deg);
+  }
+}

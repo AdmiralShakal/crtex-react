@@ -1,0 +1,26 @@
+@import '../variables.scss';
+
+.companies {
+  background-color: #f4f5f7;
+
+  &__inner {
+    padding-bottom: 177px;
+  }
+
+  &__heading {
+    margin-bottom: 60px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+  }
+
+  &__image {
+    -webkit-filter: grayscale(1);
+  }
+
+  &__image:hover {
+    -webkit-filter: grayscale(0);
+  }
+}

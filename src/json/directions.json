@@ -1,0 +1,38 @@
+[
+  {
+    "category": "Marketing",
+    "image": "",
+    "text": "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.",
+    "categegoryclass": "directions__category marketing-categ"
+  },
+  {
+    "category": "Managment",
+    "image": "-puzle",
+    "text": "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.",
+    "categegoryclass": "directions__category managment-categ"
+  },
+  {
+    "category": "HR",
+    "image": "-people",
+    "text": "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.",
+    "categegoryclass": "directions__category hr-categ"
+  },
+  {
+    "category": "Design",
+    "image": "-design",
+    "text": "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.",
+    "categegoryclass": "directions__category design-categ"
+  },
+  {
+    "category": "Development",
+    "image": "-code",
+    "text": "Odio posuere netus quisque faucibus lectus arcu donec. Eget dictum eu viverra faucibus. Viverra scelerisque consequat.",
+    "categegoryclass": "directions__category dev-categ"
+  },
+  {
+    "category": 0,
+    "image": "",
+    "text": "",
+    "categegoryclass": ""
+  }
+]

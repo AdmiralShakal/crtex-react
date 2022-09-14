@@ -1,0 +1,191 @@
+@import '../variables.scss';
+
+.directions {
+  padding: 160px 0 0;
+  margin-bottom: -46px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__subtopic {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__topic {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+
+  &__filtres {
+    display: flex;
+    margin-bottom: 57px;
+  }
+
+  &__filtre {
+    margin-right: 45px;
+    border: 1px solid $def-black;
+    border-radius: 4px;
+  }
+
+  &__filtre button {
+    padding: 1px 8px;
+    color: $def-black;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  &__filtre--active {
+    background: linear-gradient(55.95deg, $orange 0%, #f75e05 100%);
+  }
+
+  &__filtre--active button {
+    color: #ffffff;
+  }
+
+  &__programs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(381px, 1fr));
+    gap: 30px;
+  }
+
+  &__programs-item {
+    max-width: 392px;
+    border: 1px solid #e5e8ed;
+    border-radius: 4px;
+    transition: 0.8s all;
+  }
+
+  &__programs-item:hover {
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+      0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+      0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  }
+
+  &__text-block {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 24px;
+    gap: 20px;
+  }
+
+  &__category {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 1px 8px;
+  }
+
+  .marketing-categ {
+    background: #03cea4;
+  }
+
+  .direction__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #787a80;
+  }
+
+  &__button {
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: $bold-black;
+    transition: 0.4s all;
+  }
+
+  &__button::after {
+    content: '';
+    position: absolute;
+    top: 28%;
+    right: -28%;
+    background: url(../../assets/png/icons/arrow-red-right.svg);
+    width: 18px;
+    height: 11px;
+  }
+
+  &__button:hover {
+    color: $orange;
+  }
+
+  .managment-categ {
+    background: #5a87fc;
+  }
+
+  .hr-categ {
+    background: #f89828;
+  }
+
+  .design-categ {
+    background: #f52f6e;
+  }
+
+  .dev-categ {
+    background: #7772f1;
+  }
+
+  &__coming {
+    max-width: 392px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f5f7;
+    border-radius: 4px;
+  }
+
+  &__coming-text {
+    max-width: 242px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  &__sertificate {
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__sertificate-text {
+    max-width: 390px;
+  }
+
+  &__sertificate-subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__sertificate-title {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    margin-bottom: 48px;
+  }
+
+  &__sertificate-paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 32px;
+  }
+
+  &__companie {
+    margin-right: 20px;
+  }
+}

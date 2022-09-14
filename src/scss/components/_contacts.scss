@@ -1,0 +1,66 @@
+@import '../variables.scss';
+
+.contact {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    margin-bottom: 40px;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__contacts-item {
+    display: flex;
+  }
+
+  .contacts-image {
+    height: 24px;
+    width: 24px;
+    margin-right: 17px;
+  }
+
+  &__contacts-subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #787a80;
+  }
+
+  &__contacts-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: $bold-black;
+  }
+
+  &__socials {
+    margin-top: 48px;
+  }
+
+  &__socials-text {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $bold-black;
+  }
+
+  &__socials-items {
+    display: flex;
+    gap: 32px;
+  }
+}

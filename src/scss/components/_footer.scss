@@ -1,0 +1,164 @@
+@import '../variables.scss';
+
+.footer {
+  background: $bold-black;
+  color: #ffffff;
+
+  &__body {
+    display: flex;
+    padding: 81px 0 60px;
+  }
+  &__info {
+    margin-right: 80px;
+  }
+  &__item--vertical {
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo {
+    width: 130px;
+    height: 20px;
+  }
+  &__title {
+    max-width: 280px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    opacity: 0.6;
+    margin: 24px 0 38px;
+  }
+  &__socials {
+    display: flex;
+    gap: 20px;
+  }
+  &__social:hover svg path {
+    fill: #fff;
+    transition: all 0.4s;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: row;
+    margin-right: 80px;
+  }
+
+  &__navigation-block:first-child {
+    margin-right: 80px;
+  }
+  &__label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    min-width: 85px;
+  }
+
+  &__navigation-item {
+    opacity: 0.6;
+    margin-bottom: 8px;
+  }
+  &__navigation-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  &__contacts {
+    margin-right: 80px;
+  }
+  &__phone {
+    opacity: 0.6;
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    position: relative;
+    padding-left: 24px;
+  }
+
+  &__phone::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background: url(../../assets/png/icons/iPhone-footer.svg);
+    width: 16px;
+    height: 16px;
+  }
+
+  &__mail {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    opacity: 0.6;
+    padding-left: 24px;
+    position: relative;
+  }
+
+  &__mail::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background: url(../../assets/png/icons/Mail-footer.svg);
+  }
+
+  &__form {
+    margin-top: 12px;
+    position: relative;
+    margin-bottom: 12px;
+  }
+  &__form-mail {
+    width: 286px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  &__form-mail::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #ffffff;
+    opacity: 0.6;
+  }
+  &__submit {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 18%;
+  }
+  &__notification {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    opacity: 0.6;
+  }
+
+  &__bottom {
+    padding: 20px 0;
+
+    background-color: #292c37;
+  }
+
+  &__rights-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  &__rights-text {
+    cursor: default;
+  }
+
+  &__rights-text:hover svg path {
+    transition: all 0.4s;
+    fill: $orange;
+  }
+}
